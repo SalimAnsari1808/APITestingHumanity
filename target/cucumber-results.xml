@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="2" tests="2" time="0">
+<testcase classname="Verify Create Account API" name="To verify that if user has entered correct AdminId, Password, Language and requiredtoken as true" time="0">
+<skipped><![CDATA[Given User connect to registration URL......................................undefined
+When User enter AdminId "ValidValue", Password "ValidValue", Language "en" and requiredToken "true" using registration JSON.undefined
+Then User get valid response code "200" in Response Body....................undefined
+And Response Body should have "Contain" Token value.........................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Verify Create Account API" name="To verify that if user has entered correct AdminId, Password, Language and requiredtoken as false" time="0">
+<skipped><![CDATA[Given User connect to registration URL......................................undefined
+When User enter AdminId "ValidValue", Password "ValidValue", Language "en" and requiredToken "false" using registration JSON.undefined
+Then User get valid response code "200" in Response Body....................undefined
+And Response Body should have "NotContain" Token value......................undefined
+]]></skipped>
+</testcase>
+</testsuite>

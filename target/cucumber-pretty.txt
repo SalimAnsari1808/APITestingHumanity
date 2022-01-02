@@ -1,0 +1,144 @@
+Feature: Verify Cancel Subscription API
+  Description: The purpose of Feature file to verify Unit Test Cases for Cancel Subscription API
+
+  Background:                                                                                # com/api/functionalTest/Payment/CancelSubscription.feature:4
+    Given User create new valid account                                                      # AccountCreateSteps.user_create_new_valid_account()
+    And User enter created AdminId and Password using Login JSON                             # LoginSteps.user_enter_created_AdminId_and_Password_using_Login_JSON()
+    And User get token value for authorization from Login API                                # LoginSteps.user_get_token_value_for_authorization_from_Login_API()
+    And User Create an App using App create JSON                                             # AppCreateSteps.user_Create_an_App_using_App_create_JSON()
+      java.lang.NullPointerException
+      	at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)
+      	at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)
+
+    And User create User Design using Add User Design JSON                                   # UserDesignAddSteps.user_create_User_Design_using_Add_User_Design_JSON()
+    And User create User Text of correct details using Add User Text JSON                    # UserTextAddSteps.user_create_User_Text_of_correct_details_using_Add_User_Text_JSON()
+    And User Open Web Application and Complete Payment and get transactionId of Payment done # PaymentRefundSteps.user_Open_Web_Application_and_Complete_Payment_and_get_transactionId_of_Payment_done()
+
+  @CancelSubscription @Payment
+  Scenario: To verify that if user pass correct AppId                          # com/api/functionalTest/Payment/CancelSubscription.feature:14
+    When User pass "PreCreated" AppId in Cancel Subscription API.              # CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)
+    Then User get valid response "200" from server for Cancel Subscription API # CancelSubscriptionSteps.user_get_valid_response_from_server_for_Cancel_Subscription_API(String)
+    And Response body of Cancel Subscription API should have "Valid" value     # CancelSubscriptionSteps.response_body_of_Cancel_Subscription_API_should_have_value(String)
+
+  @CancelSubscription @Payment
+  Scenario Outline: To verify that if user pass <RequestType>                             # com/api/functionalTest/Payment/CancelSubscription.feature:20
+    When User pass "<RequestType>" AppId in Cancel Subscription API.
+    Then User get valid response "<ResponseCode>" from server for Cancel Subscription API
+    And Response body of Cancel Subscription API should have "<ResponseType>" value
+
+    Examples: 
+
+  Background:                                                                                # com/api/functionalTest/Payment/CancelSubscription.feature:4
+    Given User create new valid account                                                      # AccountCreateSteps.user_create_new_valid_account()
+    And User enter created AdminId and Password using Login JSON                             # LoginSteps.user_enter_created_AdminId_and_Password_using_Login_JSON()
+    And User get token value for authorization from Login API                                # LoginSteps.user_get_token_value_for_authorization_from_Login_API()
+    And User Create an App using App create JSON                                             # AppCreateSteps.user_Create_an_App_using_App_create_JSON()
+      java.lang.NullPointerException
+      	at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)
+      	at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)
+
+    And User create User Design using Add User Design JSON                                   # UserDesignAddSteps.user_create_User_Design_using_Add_User_Design_JSON()
+    And User create User Text of correct details using Add User Text JSON                    # UserTextAddSteps.user_create_User_Text_of_correct_details_using_Add_User_Text_JSON()
+    And User Open Web Application and Complete Payment and get transactionId of Payment done # PaymentRefundSteps.user_Open_Web_Application_and_Complete_Payment_and_get_transactionId_of_Payment_done()
+
+  @CancelSubscription @Payment
+  Scenario Outline: To verify that if user pass NoAppId                            # com/api/functionalTest/Payment/CancelSubscription.feature:26
+    When User pass "NoAppId" AppId in Cancel Subscription API.                     # CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)
+    Then User get valid response "400" from server for Cancel Subscription API     # CancelSubscriptionSteps.user_get_valid_response_from_server_for_Cancel_Subscription_API(String)
+    And Response body of Cancel Subscription API should have "RequiredAppId" value # CancelSubscriptionSteps.response_body_of_Cancel_Subscription_API_should_have_value(String)
+
+  Background:                                                                                # com/api/functionalTest/Payment/CancelSubscription.feature:4
+    Given User create new valid account                                                      # AccountCreateSteps.user_create_new_valid_account()
+    And User enter created AdminId and Password using Login JSON                             # LoginSteps.user_enter_created_AdminId_and_Password_using_Login_JSON()
+    And User get token value for authorization from Login API                                # LoginSteps.user_get_token_value_for_authorization_from_Login_API()
+    And User Create an App using App create JSON                                             # AppCreateSteps.user_Create_an_App_using_App_create_JSON()
+      java.lang.NullPointerException
+      	at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)
+      	at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)
+
+    And User create User Design using Add User Design JSON                                   # UserDesignAddSteps.user_create_User_Design_using_Add_User_Design_JSON()
+    And User create User Text of correct details using Add User Text JSON                    # UserTextAddSteps.user_create_User_Text_of_correct_details_using_Add_User_Text_JSON()
+    And User Open Web Application and Complete Payment and get transactionId of Payment done # PaymentRefundSteps.user_Open_Web_Application_and_Complete_Payment_and_get_transactionId_of_Payment_done()
+
+  @CancelSubscription @Payment
+  Scenario Outline: To verify that if user pass NullAppId                        # com/api/functionalTest/Payment/CancelSubscription.feature:27
+    When User pass "NullAppId" AppId in Cancel Subscription API.                 # CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)
+    Then User get valid response "400" from server for Cancel Subscription API   # CancelSubscriptionSteps.user_get_valid_response_from_server_for_Cancel_Subscription_API(String)
+    And Response body of Cancel Subscription API should have "StringAppId" value # CancelSubscriptionSteps.response_body_of_Cancel_Subscription_API_should_have_value(String)
+
+  Background:                                                                                # com/api/functionalTest/Payment/CancelSubscription.feature:4
+    Given User create new valid account                                                      # AccountCreateSteps.user_create_new_valid_account()
+    And User enter created AdminId and Password using Login JSON                             # LoginSteps.user_enter_created_AdminId_and_Password_using_Login_JSON()
+    And User get token value for authorization from Login API                                # LoginSteps.user_get_token_value_for_authorization_from_Login_API()
+    And User Create an App using App create JSON                                             # AppCreateSteps.user_Create_an_App_using_App_create_JSON()
+      java.lang.NullPointerException
+      	at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)
+      	at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)
+
+    And User create User Design using Add User Design JSON                                   # UserDesignAddSteps.user_create_User_Design_using_Add_User_Design_JSON()
+    And User create User Text of correct details using Add User Text JSON                    # UserTextAddSteps.user_create_User_Text_of_correct_details_using_Add_User_Text_JSON()
+    And User Open Web Application and Complete Payment and get transactionId of Payment done # PaymentRefundSteps.user_Open_Web_Application_and_Complete_Payment_and_get_transactionId_of_Payment_done()
+
+  @CancelSubscription @Payment
+  Scenario Outline: To verify that if user pass NumberAppId                      # com/api/functionalTest/Payment/CancelSubscription.feature:28
+    When User pass "NumberAppId" AppId in Cancel Subscription API.               # CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)
+    Then User get valid response "400" from server for Cancel Subscription API   # CancelSubscriptionSteps.user_get_valid_response_from_server_for_Cancel_Subscription_API(String)
+    And Response body of Cancel Subscription API should have "StringAppId" value # CancelSubscriptionSteps.response_body_of_Cancel_Subscription_API_should_have_value(String)
+
+  Background:                                                                                # com/api/functionalTest/Payment/CancelSubscription.feature:4
+    Given User create new valid account                                                      # AccountCreateSteps.user_create_new_valid_account()
+    And User enter created AdminId and Password using Login JSON                             # LoginSteps.user_enter_created_AdminId_and_Password_using_Login_JSON()
+    And User get token value for authorization from Login API                                # LoginSteps.user_get_token_value_for_authorization_from_Login_API()
+    And User Create an App using App create JSON                                             # AppCreateSteps.user_Create_an_App_using_App_create_JSON()
+      java.lang.NullPointerException
+      	at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)
+      	at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)
+
+    And User create User Design using Add User Design JSON                                   # UserDesignAddSteps.user_create_User_Design_using_Add_User_Design_JSON()
+    And User create User Text of correct details using Add User Text JSON                    # UserTextAddSteps.user_create_User_Text_of_correct_details_using_Add_User_Text_JSON()
+    And User Open Web Application and Complete Payment and get transactionId of Payment done # PaymentRefundSteps.user_Open_Web_Application_and_Complete_Payment_and_get_transactionId_of_Payment_done()
+
+  @CancelSubscription @Payment
+  Scenario Outline: To verify that if user pass EmptyAppId                         # com/api/functionalTest/Payment/CancelSubscription.feature:29
+    When User pass "EmptyAppId" AppId in Cancel Subscription API.                  # CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)
+    Then User get valid response "400" from server for Cancel Subscription API     # CancelSubscriptionSteps.user_get_valid_response_from_server_for_Cancel_Subscription_API(String)
+    And Response body of Cancel Subscription API should have "NotEmptyAppId" value # CancelSubscriptionSteps.response_body_of_Cancel_Subscription_API_should_have_value(String)
+
+  Background:                                                                                # com/api/functionalTest/Payment/CancelSubscription.feature:4
+    Given User create new valid account                                                      # AccountCreateSteps.user_create_new_valid_account()
+    And User enter created AdminId and Password using Login JSON                             # LoginSteps.user_enter_created_AdminId_and_Password_using_Login_JSON()
+    And User get token value for authorization from Login API                                # LoginSteps.user_get_token_value_for_authorization_from_Login_API()
+    And User Create an App using App create JSON                                             # AppCreateSteps.user_Create_an_App_using_App_create_JSON()
+      java.lang.NullPointerException
+      	at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)
+      	at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)
+
+    And User create User Design using Add User Design JSON                                   # UserDesignAddSteps.user_create_User_Design_using_Add_User_Design_JSON()
+    And User create User Text of correct details using Add User Text JSON                    # UserTextAddSteps.user_create_User_Text_of_correct_details_using_Add_User_Text_JSON()
+    And User Open Web Application and Complete Payment and get transactionId of Payment done # PaymentRefundSteps.user_Open_Web_Application_and_Complete_Payment_and_get_transactionId_of_Payment_done()
+
+  @CancelSubscription @Payment
+  Scenario Outline: To verify that if user pass InValidAppId                      # com/api/functionalTest/Payment/CancelSubscription.feature:30
+    When User pass "InValidAppId" AppId in Cancel Subscription API.               # CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)
+    Then User get valid response "400" from server for Cancel Subscription API    # CancelSubscriptionSteps.user_get_valid_response_from_server_for_Cancel_Subscription_API(String)
+    And Response body of Cancel Subscription API should have "InValidAppId" value # CancelSubscriptionSteps.response_body_of_Cancel_Subscription_API_should_have_value(String)
+
+  Background:                                                                                # com/api/functionalTest/Payment/CancelSubscription.feature:4
+    Given User create new valid account                                                      # AccountCreateSteps.user_create_new_valid_account()
+    And User enter created AdminId and Password using Login JSON                             # LoginSteps.user_enter_created_AdminId_and_Password_using_Login_JSON()
+    And User get token value for authorization from Login API                                # LoginSteps.user_get_token_value_for_authorization_from_Login_API()
+    And User Create an App using App create JSON                                             # AppCreateSteps.user_Create_an_App_using_App_create_JSON()
+      java.lang.NullPointerException
+      	at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)
+      	at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)
+
+    And User create User Design using Add User Design JSON                                   # UserDesignAddSteps.user_create_User_Design_using_Add_User_Design_JSON()
+    And User create User Text of correct details using Add User Text JSON                    # UserTextAddSteps.user_create_User_Text_of_correct_details_using_Add_User_Text_JSON()
+    And User Open Web Application and Complete Payment and get transactionId of Payment done # PaymentRefundSteps.user_Open_Web_Application_and_Complete_Payment_and_get_transactionId_of_Payment_done()
+
+  @CancelSubscription @Payment
+  Scenario: To verify that if user pass allready canceled subscription AppId         # com/api/functionalTest/Payment/CancelSubscription.feature:33
+    When User pass "PreCreated" AppId in Cancel Subscription API.                    # CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)
+    And User pass "PreCreated" AppId in Cancel Subscription API.                     # CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)
+    Then User get valid response "200" from server for Cancel Subscription API       # CancelSubscriptionSteps.user_get_valid_response_from_server_for_Cancel_Subscription_API(String)
+    And Response body of Cancel Subscription API should have "AlreadyCanceled" value # CancelSubscriptionSteps.response_body_of_Cancel_Subscription_API_should_have_value(String)

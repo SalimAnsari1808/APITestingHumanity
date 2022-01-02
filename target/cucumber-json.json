@@ -1,0 +1,1208 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4911101200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User create new valid account",
+            "match": {
+              "location": "AccountCreateSteps.user_create_new_valid_account()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 522636500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter created AdminId and Password using Login JSON",
+            "match": {
+              "location": "LoginSteps.user_enter_created_AdminId_and_Password_using_Login_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5550000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User get token value for authorization from Login API",
+            "match": {
+              "location": "LoginSteps.user_get_token_value_for_authorization_from_Login_API()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 545557300,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)\r\n\tat ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User Create an App using App create JSON",
+            "match": {
+              "location": "AppCreateSteps.user_Create_an_App_using_App_create_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User create User Design using Add User Design JSON",
+            "match": {
+              "location": "UserDesignAddSteps.user_create_User_Design_using_Add_User_Design_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User create User Text of correct details using Add User Text JSON",
+            "match": {
+              "location": "UserTextAddSteps.user_create_User_Text_of_correct_details_using_Add_User_Text_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User Open Web Application and Complete Payment and get transactionId of Payment done",
+            "match": {
+              "location": "PaymentRefundSteps.user_Open_Web_Application_and_Complete_Payment_and_get_transactionId_of_Payment_done()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "To verify that if user pass correct AppId",
+        "description": "",
+        "id": "verify-cancel-subscription-api;to-verify-that-if-user-pass-correct-appid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User pass \"PreCreated\" AppId in Cancel Subscription API.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PreCreated",
+                  "offset": 11
+                }
+              ],
+              "location": "CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User get valid response \"200\" from server for Cancel Subscription API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "CancelSubscriptionSteps.user_get_valid_response_from_server_for_Cancel_Subscription_API(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Response body of Cancel Subscription API should have \"Valid\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Valid",
+                  "offset": 54
+                }
+              ],
+              "location": "CancelSubscriptionSteps.response_body_of_Cancel_Subscription_API_should_have_value(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@CancelSubscription"
+          },
+          {
+            "line": 13,
+            "name": "@Payment"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2660078000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User create new valid account",
+            "match": {
+              "location": "AccountCreateSteps.user_create_new_valid_account()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 462060800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter created AdminId and Password using Login JSON",
+            "match": {
+              "location": "LoginSteps.user_enter_created_AdminId_and_Password_using_Login_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5183900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User get token value for authorization from Login API",
+            "match": {
+              "location": "LoginSteps.user_get_token_value_for_authorization_from_Login_API()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 503389500,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)\r\n\tat ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User Create an App using App create JSON",
+            "match": {
+              "location": "AppCreateSteps.user_Create_an_App_using_App_create_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User create User Design using Add User Design JSON",
+            "match": {
+              "location": "UserDesignAddSteps.user_create_User_Design_using_Add_User_Design_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User create User Text of correct details using Add User Text JSON",
+            "match": {
+              "location": "UserTextAddSteps.user_create_User_Text_of_correct_details_using_Add_User_Text_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User Open Web Application and Complete Payment and get transactionId of Payment done",
+            "match": {
+              "location": "PaymentRefundSteps.user_Open_Web_Application_and_Complete_Payment_and_get_transactionId_of_Payment_done()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "To verify that if user pass NoAppId",
+        "description": "",
+        "id": "verify-cancel-subscription-api;to-verify-that-if-user-pass-\u003crequesttype\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User pass \"NoAppId\" AppId in Cancel Subscription API.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NoAppId",
+                  "offset": 11
+                }
+              ],
+              "location": "CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User get valid response \"400\" from server for Cancel Subscription API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 25
+                }
+              ],
+              "location": "CancelSubscriptionSteps.user_get_valid_response_from_server_for_Cancel_Subscription_API(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Response body of Cancel Subscription API should have \"RequiredAppId\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "RequiredAppId",
+                  "offset": 54
+                }
+              ],
+              "location": "CancelSubscriptionSteps.response_body_of_Cancel_Subscription_API_should_have_value(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@CancelSubscription"
+          },
+          {
+            "line": 19,
+            "name": "@Payment"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2602135600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User create new valid account",
+            "match": {
+              "location": "AccountCreateSteps.user_create_new_valid_account()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 494457400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter created AdminId and Password using Login JSON",
+            "match": {
+              "location": "LoginSteps.user_enter_created_AdminId_and_Password_using_Login_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5634100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User get token value for authorization from Login API",
+            "match": {
+              "location": "LoginSteps.user_get_token_value_for_authorization_from_Login_API()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 498136100,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)\r\n\tat ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User Create an App using App create JSON",
+            "match": {
+              "location": "AppCreateSteps.user_Create_an_App_using_App_create_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User create User Design using Add User Design JSON",
+            "match": {
+              "location": "UserDesignAddSteps.user_create_User_Design_using_Add_User_Design_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User create User Text of correct details using Add User Text JSON",
+            "match": {
+              "location": "UserTextAddSteps.user_create_User_Text_of_correct_details_using_Add_User_Text_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User Open Web Application and Complete Payment and get transactionId of Payment done",
+            "match": {
+              "location": "PaymentRefundSteps.user_Open_Web_Application_and_Complete_Payment_and_get_transactionId_of_Payment_done()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "To verify that if user pass NullAppId",
+        "description": "",
+        "id": "verify-cancel-subscription-api;to-verify-that-if-user-pass-\u003crequesttype\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User pass \"NullAppId\" AppId in Cancel Subscription API.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NullAppId",
+                  "offset": 11
+                }
+              ],
+              "location": "CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User get valid response \"400\" from server for Cancel Subscription API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 25
+                }
+              ],
+              "location": "CancelSubscriptionSteps.user_get_valid_response_from_server_for_Cancel_Subscription_API(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Response body of Cancel Subscription API should have \"StringAppId\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "StringAppId",
+                  "offset": 54
+                }
+              ],
+              "location": "CancelSubscriptionSteps.response_body_of_Cancel_Subscription_API_should_have_value(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@CancelSubscription"
+          },
+          {
+            "line": 19,
+            "name": "@Payment"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2690965800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User create new valid account",
+            "match": {
+              "location": "AccountCreateSteps.user_create_new_valid_account()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 479011200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter created AdminId and Password using Login JSON",
+            "match": {
+              "location": "LoginSteps.user_enter_created_AdminId_and_Password_using_Login_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4061300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User get token value for authorization from Login API",
+            "match": {
+              "location": "LoginSteps.user_get_token_value_for_authorization_from_Login_API()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 492230500,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)\r\n\tat ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User Create an App using App create JSON",
+            "match": {
+              "location": "AppCreateSteps.user_Create_an_App_using_App_create_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User create User Design using Add User Design JSON",
+            "match": {
+              "location": "UserDesignAddSteps.user_create_User_Design_using_Add_User_Design_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User create User Text of correct details using Add User Text JSON",
+            "match": {
+              "location": "UserTextAddSteps.user_create_User_Text_of_correct_details_using_Add_User_Text_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User Open Web Application and Complete Payment and get transactionId of Payment done",
+            "match": {
+              "location": "PaymentRefundSteps.user_Open_Web_Application_and_Complete_Payment_and_get_transactionId_of_Payment_done()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "To verify that if user pass NumberAppId",
+        "description": "",
+        "id": "verify-cancel-subscription-api;to-verify-that-if-user-pass-\u003crequesttype\u003e;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User pass \"NumberAppId\" AppId in Cancel Subscription API.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NumberAppId",
+                  "offset": 11
+                }
+              ],
+              "location": "CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User get valid response \"400\" from server for Cancel Subscription API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 25
+                }
+              ],
+              "location": "CancelSubscriptionSteps.user_get_valid_response_from_server_for_Cancel_Subscription_API(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Response body of Cancel Subscription API should have \"StringAppId\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "StringAppId",
+                  "offset": 54
+                }
+              ],
+              "location": "CancelSubscriptionSteps.response_body_of_Cancel_Subscription_API_should_have_value(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@CancelSubscription"
+          },
+          {
+            "line": 19,
+            "name": "@Payment"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2620345700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User create new valid account",
+            "match": {
+              "location": "AccountCreateSteps.user_create_new_valid_account()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 484561500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter created AdminId and Password using Login JSON",
+            "match": {
+              "location": "LoginSteps.user_enter_created_AdminId_and_Password_using_Login_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5034400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User get token value for authorization from Login API",
+            "match": {
+              "location": "LoginSteps.user_get_token_value_for_authorization_from_Login_API()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 502347500,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)\r\n\tat ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User Create an App using App create JSON",
+            "match": {
+              "location": "AppCreateSteps.user_Create_an_App_using_App_create_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User create User Design using Add User Design JSON",
+            "match": {
+              "location": "UserDesignAddSteps.user_create_User_Design_using_Add_User_Design_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User create User Text of correct details using Add User Text JSON",
+            "match": {
+              "location": "UserTextAddSteps.user_create_User_Text_of_correct_details_using_Add_User_Text_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User Open Web Application and Complete Payment and get transactionId of Payment done",
+            "match": {
+              "location": "PaymentRefundSteps.user_Open_Web_Application_and_Complete_Payment_and_get_transactionId_of_Payment_done()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "To verify that if user pass EmptyAppId",
+        "description": "",
+        "id": "verify-cancel-subscription-api;to-verify-that-if-user-pass-\u003crequesttype\u003e;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User pass \"EmptyAppId\" AppId in Cancel Subscription API.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "EmptyAppId",
+                  "offset": 11
+                }
+              ],
+              "location": "CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User get valid response \"400\" from server for Cancel Subscription API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 25
+                }
+              ],
+              "location": "CancelSubscriptionSteps.user_get_valid_response_from_server_for_Cancel_Subscription_API(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Response body of Cancel Subscription API should have \"NotEmptyAppId\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NotEmptyAppId",
+                  "offset": 54
+                }
+              ],
+              "location": "CancelSubscriptionSteps.response_body_of_Cancel_Subscription_API_should_have_value(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@CancelSubscription"
+          },
+          {
+            "line": 19,
+            "name": "@Payment"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2661259800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User create new valid account",
+            "match": {
+              "location": "AccountCreateSteps.user_create_new_valid_account()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 483638200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter created AdminId and Password using Login JSON",
+            "match": {
+              "location": "LoginSteps.user_enter_created_AdminId_and_Password_using_Login_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3571800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User get token value for authorization from Login API",
+            "match": {
+              "location": "LoginSteps.user_get_token_value_for_authorization_from_Login_API()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 486537300,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)\r\n\tat ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User Create an App using App create JSON",
+            "match": {
+              "location": "AppCreateSteps.user_Create_an_App_using_App_create_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User create User Design using Add User Design JSON",
+            "match": {
+              "location": "UserDesignAddSteps.user_create_User_Design_using_Add_User_Design_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User create User Text of correct details using Add User Text JSON",
+            "match": {
+              "location": "UserTextAddSteps.user_create_User_Text_of_correct_details_using_Add_User_Text_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User Open Web Application and Complete Payment and get transactionId of Payment done",
+            "match": {
+              "location": "PaymentRefundSteps.user_Open_Web_Application_and_Complete_Payment_and_get_transactionId_of_Payment_done()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "To verify that if user pass InValidAppId",
+        "description": "",
+        "id": "verify-cancel-subscription-api;to-verify-that-if-user-pass-\u003crequesttype\u003e;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User pass \"InValidAppId\" AppId in Cancel Subscription API.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "InValidAppId",
+                  "offset": 11
+                }
+              ],
+              "location": "CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User get valid response \"400\" from server for Cancel Subscription API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 25
+                }
+              ],
+              "location": "CancelSubscriptionSteps.user_get_valid_response_from_server_for_Cancel_Subscription_API(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Response body of Cancel Subscription API should have \"InValidAppId\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "InValidAppId",
+                  "offset": 54
+                }
+              ],
+              "location": "CancelSubscriptionSteps.response_body_of_Cancel_Subscription_API_should_have_value(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@CancelSubscription"
+          },
+          {
+            "line": 19,
+            "name": "@Payment"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2640758600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User create new valid account",
+            "match": {
+              "location": "AccountCreateSteps.user_create_new_valid_account()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 475677500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter created AdminId and Password using Login JSON",
+            "match": {
+              "location": "LoginSteps.user_enter_created_AdminId_and_Password_using_Login_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3398800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User get token value for authorization from Login API",
+            "match": {
+              "location": "LoginSteps.user_get_token_value_for_authorization_from_Login_API()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 516039000,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)\r\n\tat ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User Create an App using App create JSON",
+            "match": {
+              "location": "AppCreateSteps.user_Create_an_App_using_App_create_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User create User Design using Add User Design JSON",
+            "match": {
+              "location": "UserDesignAddSteps.user_create_User_Design_using_Add_User_Design_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User create User Text of correct details using Add User Text JSON",
+            "match": {
+              "location": "UserTextAddSteps.user_create_User_Text_of_correct_details_using_Add_User_Text_JSON()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User Open Web Application and Complete Payment and get transactionId of Payment done",
+            "match": {
+              "location": "PaymentRefundSteps.user_Open_Web_Application_and_Complete_Payment_and_get_transactionId_of_Payment_done()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "To verify that if user pass allready canceled subscription AppId",
+        "description": "",
+        "id": "verify-cancel-subscription-api;to-verify-that-if-user-pass-allready-canceled-subscription-appid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "User pass \"PreCreated\" AppId in Cancel Subscription API.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PreCreated",
+                  "offset": 11
+                }
+              ],
+              "location": "CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "User pass \"PreCreated\" AppId in Cancel Subscription API.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PreCreated",
+                  "offset": 11
+                }
+              ],
+              "location": "CancelSubscriptionSteps.user_pass_AppId_in_Cancel_Subscription_API(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "User get valid response \"200\" from server for Cancel Subscription API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "CancelSubscriptionSteps.user_get_valid_response_from_server_for_Cancel_Subscription_API(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "Response body of Cancel Subscription API should have \"AlreadyCanceled\" value",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AlreadyCanceled",
+                  "offset": 54
+                }
+              ],
+              "location": "CancelSubscriptionSteps.response_body_of_Cancel_Subscription_API_should_have_value(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@CancelSubscription"
+          },
+          {
+            "line": 32,
+            "name": "@Payment"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Cancel Subscription API",
+    "description": "Description: The purpose of Feature file to verify Unit Test Cases for Cancel Subscription API",
+    "id": "verify-cancel-subscription-api",
+    "keyword": "Feature",
+    "uri": "com/api/functionalTest/Payment/CancelSubscription.feature"
+  }
+]

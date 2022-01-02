@@ -1,0 +1,128 @@
+[
+  {
+    "source": "^User enter created AdminId and Password using Login JSON$",
+    "steps": [
+      {
+        "name": "User enter created AdminId and Password using Login JSON",
+        "aggregatedDurations": {
+          "average": 0.486006157,
+          "median": 0.4836382
+        },
+        "durations": [
+          {
+            "duration": 0.5226365,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:6"
+          },
+          {
+            "duration": 0.4620608,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:6"
+          },
+          {
+            "duration": 0.4944574,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:6"
+          },
+          {
+            "duration": 0.4790112,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:6"
+          },
+          {
+            "duration": 0.4845615,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:6"
+          },
+          {
+            "duration": 0.4836382,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:6"
+          },
+          {
+            "duration": 0.4756775,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User get token value for authorization from Login API",
+    "steps": [
+      {
+        "name": "User get token value for authorization from Login API",
+        "aggregatedDurations": {
+          "average": 0.004633471,
+          "median": 0.0050344
+        },
+        "durations": [
+          {
+            "duration": 0.00555,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:7"
+          },
+          {
+            "duration": 0.0051839,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:7"
+          },
+          {
+            "duration": 0.0056341,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:7"
+          },
+          {
+            "duration": 0.0040613,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:7"
+          },
+          {
+            "duration": 0.0050344,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:7"
+          },
+          {
+            "duration": 0.0035718,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:7"
+          },
+          {
+            "duration": 0.0033988,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User create new valid account",
+    "steps": [
+      {
+        "name": "User create new valid account",
+        "aggregatedDurations": {
+          "average": 2.969520671,
+          "median": 2.660078
+        },
+        "durations": [
+          {
+            "duration": 4.9111012,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:5"
+          },
+          {
+            "duration": 2.660078,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:5"
+          },
+          {
+            "duration": 2.6021356,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:5"
+          },
+          {
+            "duration": 2.6909658,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:5"
+          },
+          {
+            "duration": 2.6203457,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:5"
+          },
+          {
+            "duration": 2.6612598,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:5"
+          },
+          {
+            "duration": 2.6407586,
+            "location": "com/api/functionalTest/Payment/CancelSubscription.feature:5"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,174 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User connect to registration URL.",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "To verify that if user has entered correct AdminId, Password, Language and requiredtoken as true",
+        "description": "",
+        "id": "verify-create-account-api;to-verify-that-if-user-has-entered-correct-adminid,-password,-language-and-requiredtoken-as-\u003crequiretoken\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "User enter AdminId \"ValidValue\", Password \"ValidValue\", Language \"en\" and requiredToken \"true\" using registration JSON",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "User get valid response code \"200\" in Response Body.",
+            "match": {},
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "Response Body should have \"Contain\" Token value.",
+            "match": {},
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@dryrun"
+          },
+          {
+            "line": 7,
+            "name": "@CreateAcount"
+          },
+          {
+            "line": 7,
+            "name": "@Account"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User connect to registration URL.",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "To verify that if user has entered correct AdminId, Password, Language and requiredtoken as false",
+        "description": "",
+        "id": "verify-create-account-api;to-verify-that-if-user-has-entered-correct-adminid,-password,-language-and-requiredtoken-as-\u003crequiretoken\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "User enter AdminId \"ValidValue\", Password \"ValidValue\", Language \"en\" and requiredToken \"false\" using registration JSON",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "User get valid response code \"200\" in Response Body.",
+            "match": {},
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "Response Body should have \"NotContain\" Token value.",
+            "match": {},
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@dryrun"
+          },
+          {
+            "line": 7,
+            "name": "@CreateAcount"
+          },
+          {
+            "line": 7,
+            "name": "@Account"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Create Account API",
+    "description": "Description: The purpose of Feature file to verify Unit Test Cases for Create Account API",
+    "id": "verify-create-account-api",
+    "keyword": "Feature",
+    "uri": "com/api/functionalTest/CreateAccount.feature"
+  }
+]

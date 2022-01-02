@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="7" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="27.765359">
+<testcase classname="Verify Cancel Subscription API" name="To verify that if user pass correct AppId" time="5.984845">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)&#13;&#10;&#9;at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)&#13;&#10;"><![CDATA[Given User create new valid account.........................................passed
+And User enter created AdminId and Password using Login JSON................passed
+And User get token value for authorization from Login API...................passed
+And User Create an App using App create JSON................................failed
+And User create User Design using Add User Design JSON......................skipped
+And User create User Text of correct details using Add User Text JSON.......skipped
+And User Open Web Application and Complete Payment and get transactionId of Payment done.skipped
+When User pass "PreCreated" AppId in Cancel Subscription API................skipped
+Then User get valid response "200" from server for Cancel Subscription API..skipped
+And Response body of Cancel Subscription API should have "Valid" value......skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)
+	at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="Verify Cancel Subscription API" name="To verify that if user pass NoAppId" time="3.630712">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)&#13;&#10;&#9;at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)&#13;&#10;"><![CDATA[Given User create new valid account.........................................passed
+And User enter created AdminId and Password using Login JSON................passed
+And User get token value for authorization from Login API...................passed
+And User Create an App using App create JSON................................failed
+And User create User Design using Add User Design JSON......................skipped
+And User create User Text of correct details using Add User Text JSON.......skipped
+And User Open Web Application and Complete Payment and get transactionId of Payment done.skipped
+When User pass "NoAppId" AppId in Cancel Subscription API...................skipped
+Then User get valid response "400" from server for Cancel Subscription API..skipped
+And Response body of Cancel Subscription API should have "RequiredAppId" value.skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)
+	at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="Verify Cancel Subscription API" name="To verify that if user pass NullAppId" time="3.600363">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)&#13;&#10;&#9;at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)&#13;&#10;"><![CDATA[Given User create new valid account.........................................passed
+And User enter created AdminId and Password using Login JSON................passed
+And User get token value for authorization from Login API...................passed
+And User Create an App using App create JSON................................failed
+And User create User Design using Add User Design JSON......................skipped
+And User create User Text of correct details using Add User Text JSON.......skipped
+And User Open Web Application and Complete Payment and get transactionId of Payment done.skipped
+When User pass "NullAppId" AppId in Cancel Subscription API.................skipped
+Then User get valid response "400" from server for Cancel Subscription API..skipped
+And Response body of Cancel Subscription API should have "StringAppId" value.skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)
+	at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="Verify Cancel Subscription API" name="To verify that if user pass NumberAppId" time="3.666269">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)&#13;&#10;&#9;at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)&#13;&#10;"><![CDATA[Given User create new valid account.........................................passed
+And User enter created AdminId and Password using Login JSON................passed
+And User get token value for authorization from Login API...................passed
+And User Create an App using App create JSON................................failed
+And User create User Design using Add User Design JSON......................skipped
+And User create User Text of correct details using Add User Text JSON.......skipped
+And User Open Web Application and Complete Payment and get transactionId of Payment done.skipped
+When User pass "NumberAppId" AppId in Cancel Subscription API...............skipped
+Then User get valid response "400" from server for Cancel Subscription API..skipped
+And Response body of Cancel Subscription API should have "StringAppId" value.skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)
+	at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="Verify Cancel Subscription API" name="To verify that if user pass EmptyAppId" time="3.612289">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)&#13;&#10;&#9;at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)&#13;&#10;"><![CDATA[Given User create new valid account.........................................passed
+And User enter created AdminId and Password using Login JSON................passed
+And User get token value for authorization from Login API...................passed
+And User Create an App using App create JSON................................failed
+And User create User Design using Add User Design JSON......................skipped
+And User create User Text of correct details using Add User Text JSON.......skipped
+And User Open Web Application and Complete Payment and get transactionId of Payment done.skipped
+When User pass "EmptyAppId" AppId in Cancel Subscription API................skipped
+Then User get valid response "400" from server for Cancel Subscription API..skipped
+And Response body of Cancel Subscription API should have "NotEmptyAppId" value.skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)
+	at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="Verify Cancel Subscription API" name="To verify that if user pass InValidAppId" time="3.635007">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)&#13;&#10;&#9;at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)&#13;&#10;"><![CDATA[Given User create new valid account.........................................passed
+And User enter created AdminId and Password using Login JSON................passed
+And User get token value for authorization from Login API...................passed
+And User Create an App using App create JSON................................failed
+And User create User Design using Add User Design JSON......................skipped
+And User create User Text of correct details using Add User Text JSON.......skipped
+And User Open Web Application and Complete Payment and get transactionId of Payment done.skipped
+When User pass "InValidAppId" AppId in Cancel Subscription API..............skipped
+Then User get valid response "400" from server for Cancel Subscription API..skipped
+And Response body of Cancel Subscription API should have "InValidAppId" value.skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)
+	at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="Verify Cancel Subscription API" name="To verify that if user pass allready canceled subscription AppId" time="3.635874">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)&#13;&#10;&#9;at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)&#13;&#10;"><![CDATA[Given User create new valid account.........................................passed
+And User enter created AdminId and Password using Login JSON................passed
+And User get token value for authorization from Login API...................passed
+And User Create an App using App create JSON................................failed
+And User create User Design using Add User Design JSON......................skipped
+And User create User Text of correct details using Add User Text JSON.......skipped
+And User Open Web Application and Complete Payment and get transactionId of Payment done.skipped
+When User pass "PreCreated" AppId in Cancel Subscription API................skipped
+And User pass "PreCreated" AppId in Cancel Subscription API.................skipped
+Then User get valid response "200" from server for Cancel Subscription API..skipped
+And Response body of Cancel Subscription API should have "AlreadyCanceled" value.skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.api.stepDefination.AppCreateSteps.user_Create_an_App_using_App_create_JSON(AppCreateSteps.java:274)
+	at ✽.And User Create an App using App create JSON(com/api/functionalTest/Payment/CancelSubscription.feature:8)
+]]></failure>
+</testcase>
+</testsuite>
